@@ -1,6 +1,5 @@
-import React, { Component } from "react";
-import JokeList from "./JokeList";
-
+import React from "react";
+import JokeList from "./JokeList.js";
 /** App component. Renders list of jokes. */
 
 function App () {
