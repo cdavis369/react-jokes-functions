@@ -9,14 +9,14 @@ const JokeList = () => {
   const [jokes, setJokes] = useState([]);
 
   useEffect(() => {
-    setJokes(response); // Update local state when response changes
+    setJokes(response);
   }, [response]);
 
   const vote = (id, delta) => {
     const updatedJokes = jokes.map(joke =>
       joke.id === id ? { ...joke, votes: joke.votes + delta } : joke
     );
-    setJokes(updatedJokes); // Update only the joke's votes
+    setJokes(updatedJokes);
   };
   if (isLoading) {
       return (
